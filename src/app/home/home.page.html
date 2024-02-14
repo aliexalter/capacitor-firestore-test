@@ -1,20 +1,55 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Firestore Test
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid>
+    <ion-row class="yearChange">
+      <ion-col>
+        <ion-badge (click)="prevYear()">prev</ion-badge>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <strong>{{s_year}}</strong>
+      </ion-col>
+      <ion-col>
+        <ion-badge class="ion-float-right" (click)="nextYear()">nxt</ion-badge>
+      </ion-col>
+    </ion-row>
+    <ion-row class="monthChange">
+      <ion-col>
+        <ion-badge (click)="prevMonth()">nxt</ion-badge>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <strong>{{s_month}}</strong>
+      </ion-col>
+      <ion-col>
+        <ion-badge class="ion-float-right" (click)="nextMonth()">nxt</ion-badge>
+      </ion-col>
+    </ion-row>
+</ion-grid>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <strong>Documents Data</strong>
+    </ion-col>
+  </ion-row>
+  <ion-row *ngFor="let entry of entries">
+    <ion-col>{{entry.Month}}</ion-col>
+    <ion-col>{{entry.Year}}</ion-col>
+  </ion-row>
+</ion-grid>
+<hr/>
+<ion-grid *ngIf="s_month == 'February' && s_year==2024">
+  <ion-row>
+    <ion-col>
+      <ion-button color="success" (click)="addDocument()" expand="block" fill="clear" shape="round">
+        Add Document
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 </ion-content>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "873305874167",
+    "project_id": "chores-ed637",
+    "storage_bucket": "chores-ed637.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873305874167:android:917ac0d78d33a452efbdf2",
+        "android_client_info": {
+          "package_name": "uk.softwarestudio.capfirestoretest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873305874167-o6dpfp6h4cap4h859kqat09158tpo6i5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBODIrUwPupVciR8B2F6T-0qtg6Q_eiaBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873305874167-o6dpfp6h4cap4h859kqat09158tpo6i5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
