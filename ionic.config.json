@@ -1,0 +1,7 @@
+{
+  "name": "Capacitor Firestore Test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
