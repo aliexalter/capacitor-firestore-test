@@ -43,11 +43,18 @@
   </ion-row>
 </ion-grid>
 <hr/>
-<ion-grid *ngIf="s_month == 'February' && s_year==2024">
-  <ion-row>
+<ion-grid>
+  <ion-row *ngIf="s_month == 'February' && s_year==2024">
     <ion-col>
       <ion-button color="success" (click)="addDocument()" expand="block" fill="clear" shape="round">
         Add Document
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button color="primary" (click)="loadCurrentMonthData()" expand="block" fill="clear" shape="round">
+        Get Document
       </ion-button>
     </ion-col>
   </ion-row>
